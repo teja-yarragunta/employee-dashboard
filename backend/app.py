@@ -20,6 +20,9 @@ try:
 except Exception as e:
     print(f"MongoDB connection error: {e}")
 
+print(os.getenv("MONGO_URI"))
+
+
 frontend_folder = os.path.join(os.getcwd(), "..", "frontend")
 dist_folder = os.path.join(frontend_folder, "dist")
 
